@@ -1,0 +1,888 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html {
+	-webkit-text-size-adjust: 100%;
+	font-size: 62.5%;
+	
+}
+body {
+	color: #3e3a39;
+	font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", san-serif;
+	font-weight: 500;
+    text-align: center;
+	margin:0px;
+	
+}
+.wrap{
+	overflow: hidden;
+}
+
+img {
+	border-style: none;
+}
+hr {
+  border-top: 1px dotted #FF8B8D;
+  border-bottom: 1px dotted #FF8B8D;
+}
+
+
+a {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+    cursor: hand;
+}
+a:hover{
+	cursor: pointer;
+    cursor: hand;
+	opacity: 0.6;
+}
+
+ul li{
+	list-style: none;
+}
+
+h2 {
+	font-family: 游明朝, "Yu Mincho", YuMincho, "Hiragino Mincho ProN", serif;
+	font-weight: DemiBold;
+}
+main{
+	width: 100vw;
+	height: 100vh;
+	background-image:url(../images/bike13.jpg);
+	background-attachment:fixed;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+}
+
+#map {
+  width: 100%;
+  height: 70vh;
+	display: block;
+	margin: 0 auto;
+}
+.header_wrap{
+	width: 100%;
+	padding-top:5vh;
+    line-height: 60px;
+	vertical-align: middle;
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+	
+	
+} 
+
+.header_navigation{
+	display: inline-block;
+	font-family: 'Open Sans', sans-serif;
+	
+}
+
+
+.header_wrap li{
+	display:inline-block;
+	color:##6c7279;
+	font-size: 1.5em;
+	padding-left: 15px;
+	padding-right:15px;
+	letter-spacing: 2px;
+	
+}
+
+.main_img{
+	width: 448px;
+	height:248px;
+	background-size: cover;
+	background-image:url(../images/logo12.png);
+	display: block;
+	margin: 20vh auto 0 auto;
+	
+}
+
+.main_logo{
+	width: 30px;
+	height: 30px;
+	background-image:url(../images/bike21.png);
+	background-size: cover;
+    margin: 5vh auto 0;
+
+}
+.main_logo a:hover{
+	cursor: pointer;
+    cursor: hand;
+}
+.main_login{
+	margin-top:15vh;
+	width:100%;
+	height: auto;
+}
+
+.float{
+	cursor: pointer;
+    cursor: hand;
+	color: #FFF;/*文字・アイコン色*/
+  border-radius: 7px;/*角丸に*/
+  display: inline-block;
+  height: 50px;/*高さ*/
+  width: 190px;/*幅*/
+  text-align: center;/*中身を中央寄せ*/
+  font-size: 25px;/*文字のサイズ*/
+  line-height: 50px;/*高さと合わせる*/
+  vertical-align: middle;/*垂直中央寄せ*/
+  background:#FF8B8D;
+  overflow: hidden;/*はみ出た部分を隠す*/
+  text-decoration:none;/*下線は消す*/
+}
+#contents{
+	text-align: center;
+}
+#modal-open{
+	display: inline-block;
+	width: 15%;
+}
+#modal-open span{
+	font-family:筑紫A丸ゴシック;
+}
+#modal-content{
+ width: 60vw;
+height: 60vh;
+ margin: 0;
+ padding: 10px 20px;
+ border: 2px solid #fff;
+ background:#FFCCCC;
+ position: absolute;
+ display: none;
+ z-index: 2 ;
+}
+
+#modal-content-innar{
+ margin:0 auto;
+ width:80%;
+ color: #fff;
+}
+#modal-content h2 {
+	color: #fff;
+	font-family:fot-udmarugo-large-pr6n, sans-serif;
+}
+#modal-close{
+	
+	margin-right: 10vw;
+	margin-top: 10vh;
+}
+.form-control_name{
+	border:0;
+padding:10px;
+font-size:1.3em;
+font-family:Arial, sans-serif;
+color:#aaa;
+border:solid 1px #ccc;
+margin:3vh 0 2vh 0;
+width:300px;
+}
+.form-control_pass{
+	border:0;
+padding:10px;
+font-size:1.3em;
+font-family:Arial, sans-serif;
+color:#aaa;
+border:solid 1px #ccc;
+margin:0 0 6vh ;
+width:300px;
+}
+
+.heading a{
+	width: 130px;
+	height: 60px;
+	background-image: url(../images/logo11.png);
+	background-size: cover;
+	margin-top: 4vh;
+	margin-bottom: 4vh;
+	display: inline-block;
+}
+
+.button-link {
+	margin-left: 340px;
+	margin-bottom: 200px;
+    text-decoration: none;
+	position: absolute;
+	width: 1.4em;
+	height: 1.4em;
+	border: 0.1em solid #Fff;
+	border-radius: 100%;
+	cursor: pointer;
+	cursor: hand;
+	
+}
+.button-link::before{
+	position: absolute;
+	top: 0.2em;
+	left: 0.6em;
+	width: 0.2em;
+	height: 1em;
+	content:"";
+	background-color: #fff;
+	transform: rotate(45deg);
+}
+.button-link::after{
+	position: absolute;
+	top: 0.6em;
+	left: 0.2em;
+	width: 1em;
+	height: 0.2em;
+	content: "";
+	background-color: #fff;
+	transform: rotate(225deg);
+}
+
+.button-link:hover {
+ background:#FFB2B3;
+}
+
+.float{
+	font-family:筑紫A丸ゴシック;
+}
+#wrap{
+		width: 100vw;
+		height: 10vh;
+		display: table-cell;
+		vertical-align: center;
+		z-index: 1;
+		position: relative;
+	}
+
+
+.mainImg {
+  left: 0px;
+  top: 0px;
+  position: fixed;
+}
+.mainImg_photo img {
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+.input-group{
+	margin-bottom: 10px;
+}
+
+.fl_tw2{/*ボタンの背景*/
+  color: #FFF;/*文字・アイコン色*/
+  border-radius: 7px;/*角丸に*/
+  display: inline-block;
+  height: 50px;/*高さ*/
+  width: 190px;/*幅*/
+  text-align: center;/*中身を中央寄せ*/
+  font-size: 25px;/*文字のサイズ*/
+  line-height: 50px;/*高さと合わせる*/
+  vertical-align: middle;/*垂直中央寄せ*/
+  background:#FF8B8D;
+  overflow: hidden;/*はみ出た部分を隠す*/
+  text-decoration:none;/*下線は消す*/
+}
+
+.fl_tw2 .fa-twitter {
+    text-shadow: 2px 2px 0px #4287d6;
+    font-size: 30px;
+}
+
+.fl_tw2 span {/*テキスト*/
+    display:inline-block;
+	cursor: pointer;
+    cursor: hand;
+    transition: .5s
+}
+
+.fl_tw2:hover span{/*ホバーで一周回転*/
+  -webkit-transform: rotateX(360deg);
+  -ms-transform: rotateX(360deg);
+  transform: rotateX(360deg);
+}
+
+.container {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	
+}
+.container_no{ 
+	position: absolute;
+	font-size: 2em;
+	color: #FF8B8D;
+	margin-top: 30px;
+	
+}
+.container_no2{ 
+	position: absolute;
+	font-size: 2em;
+	color:#FF8B8D;
+	margin-top: 30px;}
+
+	
+.container_no3{ 
+	position: absolute;
+	font-size: 2em;
+	color: #FF8B8D;
+	margin-top: 30px;
+
+}
+.container_no4{ 
+	position: absolute;
+	font-size: 2em;
+	color: #FF8B8D;
+	margin-top: 30px;
+	
+}
+
+.container_no span{
+	font-size: 0.8em;
+}
+.container_no2 span{
+	font-size: 0.8em;
+}
+.container_no3 span{
+	font-size: 0.8em;
+}
+.container_no4 span{
+	font-size: 0.8em;
+}
+.container_no strong{
+	font-size: 0.4em;
+	color: dimgray;
+	padding-left: 10px;
+	font-family:筑紫A丸ゴシック;
+}
+
+.container_no2 strong{
+	font-size: 0.4em;
+	color: dimgray;
+	padding-left: 10px;
+	font-family:筑紫A丸ゴシック;
+}
+.container_no3 strong{
+	font-size: 0.4em;
+	color: dimgray;
+	padding-left: 10px;
+	font-family:筑紫A丸ゴシック;
+}
+.container_no4 strong{
+	font-size: 0.4em;
+	color: dimgray;
+	padding-left: 10px;
+	font-family:筑紫A丸ゴシック;
+}
+.container h3{
+	padding-top: 100px;
+}
+
+.container_article_wrap{
+	padding-top: 12vh;
+}
+.container2_article_wrap{
+	padding-top: 12vh;
+}
+.container3_article_wrap{
+	padding-top: 12vh;
+}
+.container4_article_wrap{
+	padding-top: 12vh;
+}
+.container_iti{
+	background-image:url(../images/iti.png);
+	width: 12px;
+	height: 80px;
+	position: absolute;
+	background-size: cover;
+	background-attachment: scroll;
+	margin-top: 50vh;
+	margin-left: 7vh;
+	display: none;
+}
+.container_iti2{
+	background-image:url(../images/iti2.png);
+	width: 12px;
+	height: 80px;
+	position: absolute;
+	background-size: cover;
+	background-attachment: scroll;
+	margin-top: 50vh;
+	margin-left: 7vh;
+	z-index: 5;
+	display: none;
+}
+.container_iti3{
+	background-image:url(../images/iti3.png);
+	width: 12px;
+	height: 80px;
+	position: absolute;
+	background-size: cover;
+	background-attachment: scroll;
+	margin-top: 50vh;
+	margin-left: 7vh;
+	display: none;
+}
+.container_iti4{
+	background-image:url(../images/iti4.png);
+	width: 12px;
+	height: 80px;
+	position: absolute;
+	background-size: cover;
+	background-attachment: scroll;
+	margin-top: 50vh;
+	margin-left: 7vh;
+	display: none;
+}
+
+.container_about_h2span img{
+	
+	width: 300px;
+	height: 110px;
+	margin: 0 auto;
+	display: block;
+	padding-top: 10vh;
+	
+}
+
+.container_top h3{
+	text-align: left;
+	font-size: 3.5em;
+	color: #666;
+	font-family:筑紫A丸ゴシック;
+	font-weight: 150;
+	
+}
+.container_top span{
+	font-family: 筑紫A丸ゴシック;
+	font-weight: bold;
+	color:#FF8B8D; 
+}
+.container_article_wrap{
+	margin-left: 15vw;
+}
+.container_article{
+	margin-top: 15vh;
+	
+}
+.container_article p{
+	text-align: left;
+	font-size: 1.4em;
+	color: #666;
+	font-family:筑紫A丸ゴシック;
+	line-height: 4vh;
+	
+	
+	
+}
+
+.container_article_first{
+	
+}
+.container_article_second{
+	
+}
+.container_article_third{
+	
+}
+.container_img{
+	width: 700px;
+	height: 600px;
+	background-image:url(../images/bike32.png);
+	background-attachment: scroll;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+	margin-left: 54vw;
+	margin-top: 8vh;
+	
+}
+
+
+.container2{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+}
+
+.container2_top h3{
+	text-align: left;
+	font-size: 3.5em;
+	color: #666;
+	font-family:筑紫A丸ゴシック;
+	font-weight: 150;
+	padding-top: 100px;
+	
+	
+}
+.container2 span{
+	font-family: 筑紫A丸ゴシック;
+	font-weight: bold;
+	color:#FF8B8D; 
+}
+.container2_article_wrap{
+	margin-left: 60vw;
+}
+.container2_article{
+	margin-top: 15vh;
+}
+.container2_article p{
+	text-align: left;
+	font-size: 1.4em;
+	color: #666;
+	font-family:筑紫A丸ゴシック;
+	line-height: 4vh;
+}
+
+.container2_article_first{
+	
+}
+.container2_article_second{
+	
+}
+.container2_article_third{
+	
+}
+.container2_img{
+	width: 580px;
+	height: 440px;
+	background-image:url(../images/bike19.jpg);
+	background-attachment: scroll;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+	margin-left: 6vw;
+	margin-top: 22vh;
+	z-index: 4;
+}
+.container3{
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	
+}
+.container3 h3{
+	padding-top: 100px;
+}
+.container3_top h3{
+	text-align: left;
+	font-size: 3.5em;
+	color: #666;
+	font-family:筑紫A丸ゴシック;
+	font-weight: 150;
+}
+.container3_top span{
+	font-family: 筑紫A丸ゴシック;
+	font-weight: bold;
+	color:#FF8B8D; 
+}
+.container3_article{
+	margin-top: 8vh;
+}
+.container3_article p{
+	text-align: left;
+	font-size: 1.4em;
+	color: #666;
+	font-family:筑紫A丸ゴシック;
+	line-height: 5vh;
+}
+.container3_article_wrap{
+	margin-left: 15vw;
+}
+.container3_article_first{
+	
+}
+.container3_article_second{
+	
+}
+.container3_article_third{
+	
+}
+
+
+
+.phone{
+display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(525px * .492776886);
+    height: 525px;
+    background: linear-gradient(180deg, #fff -45.17%, rgba(255,255,255,0) 130.21%),#FAFBFC;
+    box-shadow: 0px 0.5px 2px rgba(0,18,57,0.1), 0px 11px 17px rgba(0,18,57,0.09), inset 0px -3px 20px rgba(0,18,57,0.1), inset 0px 8px 13px #fff, inset 0px 0px 7px rgba(0,18,57,0.05);
+    border-radius: calc(525px * .0664686269);
+    user-select: none;
+	position: absolute;
+	margin-left: 65vw;
+	margin-bottom: 130px;
+	margin-top: 20vh;
+}
+
+.phone__screen{
+    width: calc(424.2840254625px * .5625);
+    height: 424.2840254625px;
+    border-radius: 2px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    box-shadow: rgba(204,208,215,0.5) 0px 0px 2px;
+    user-select: none;
+}
+
+.phone_image{
+
+}
+
+
+.app2{
+	width: 300px;
+	height: 70px;
+	padding-top: 6vh;
+	display: block;
+}
+
+.Appstore2{
+	width: 135px;
+	height: 45px;
+	background-image: url(../images/bike26.svg);
+	background-size: cover;
+    margin: 0 auto;
+	display: inline-block;
+	margin-right: 10px;
+}
+.Google_play2{
+	width: 150px;
+	height: 45px;
+	background-image: url(../images/bike37.png);
+	background-size: cover;
+	margin: 0 auto;
+	margin-top: vh;
+	margin-left:;
+	display: inline-block;
+	
+}
+
+
+
+
+
+
+.container4{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	margin-bottom: 20vh;
+	
+	
+}
+
+.container4_top h3{
+	text-align: left;
+	font-size: 3.5em;
+	color: #666;
+	font-family:筑紫A丸ゴシック;
+	font-weight: 150;
+	padding-top: 100px;
+	
+}
+.container4 span{
+	font-family: 筑紫A丸ゴシック;
+	font-weight: bold;
+	color:#FF8B8D; 
+}
+.container4_article_wrap{
+	margin-left: 60vw;
+}
+.container4_article{
+	margin-top: 15vh;
+}
+.container4_article p{
+	text-align: left;
+	font-size: 1.4em;
+	color: #666;
+	font-family:筑紫A丸ゴシック;
+	line-height: 5vh;
+}
+
+.container4_article_first{
+	
+}
+.container4_article_second{
+	
+}
+.container4_article_third{
+	
+}
+.container4_img{
+	width: 640px;
+	height: 440px;
+	background-image:url(../images/bike36.png);
+	background-attachment: scroll;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+	margin-left: 8vw;
+	margin-top: 20vh;
+	z-index: 70;
+}
+
+.container_map_h2span img{
+	width: 300px;
+	height: 90px;
+	margin: 0 auto;
+	display: block;
+	margin-bottom: 5vh;
+	padding-top: 10vh;
+	
+}
+
+#pageTop{
+	
+	margin-left: 90vw;
+	
+}
+#pageTop a{
+	color: #FF8B8D;
+}
+#pageTop a:hover{
+	opacity: 0.5 ;
+}
+.header_wrap a:hover{
+	opacity: 0.5;
+}
+.footer_wrap a:hover{
+	opacity: 0.5;
+}
+
+
+.registration{
+	width: 100%;
+	height:43vh;
+	background-color:#91d0c2;
+}
+.registation_bicycle img{
+	width: 200px;
+	height: 100px;
+	display: block;
+	margin-left: 68vw;
+	padding-top: 5vh;
+}
+.app{
+	width: 300px;
+	height:70px;
+	margin-left: 65.5vw;
+	padding-top: 5vh;
+	display: block;
+	
+}
+
+.Appstore{
+	width: 135px;
+	height: 45px;
+	background-image: url(../images/bike26.svg);
+	background-size: cover;
+	 margin: 0 auto;
+	display: inline-block;
+}
+.Google_play{
+	width: 150px;
+	height: 45px;
+	background-image: url(../images/bike37.png);
+	background-size: cover;
+	margin: 0 auto;
+	display: inline-block;
+	
+}
+.phone2{
+	width:230px;
+	height:360px;
+	background-image: url(../images/bike_iphone2.png);
+	background-size: cover;
+	position: absolute;
+	margin-left: 20vw;
+	
+}
+
+
+.container_app_h2span img{
+	width: 300px;
+	height: 90px;
+	margin: 0 auto;
+	display: block;
+	margin-bottom: 5vh;
+	padding-top: 20vh;
+}
+
+
+.container_contact_h2span img{
+	width: 300px;
+	height: 90px;
+	margin: 0 auto;
+	display: block;
+	margin-bottom: 10vh;
+	padding-top: 10vh;
+}
+.contact_wrap{
+	width: 100vw;
+	height: 600px;
+	text-align: left;
+	
+}
+.contact_article{
+	width: 400px;
+	height: 400px;
+	display: block;
+	margin: 0 auto;
+}
+.mfp{
+	display: inline-block;
+}
+.select{
+	display: inline-block;
+}
+.element{
+	display: block;
+}
+.footer_wrap{
+	width:100%;
+	height: 60px;
+    line-height: 60px;
+	background-color:#FF8B8D;
+	background-size: cover;
+}
+.footer_wrap p{
+	vertical-align: middle;
+	text-align: center;
+	color: #fff;
+}
+
+.fa-facebook-square{
+	color: #fff;
+}
+.fa-instagram{
+	color: #fff;
+}
+.header_wrap .fa{
+	color: #666;
+}
+
+.footer_logo{
+	width:100%;
+	height: 100px;
+	background-image:url(../images/bike39.svg);
+	background-size: cover;
+	margin-bottom: -15px;
+}
+
+
+
+@media screen and (max-width: 479px) { /*ウィンドウ幅が最大479pxまでの場合に適用*/
+.wrap {
+
+}
+}

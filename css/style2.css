@@ -1,0 +1,305 @@
+@charset "UTF-8";
+
+a:hover{
+	cursor: pointer;
+    cursor: hand;
+}
+
+ul li{
+	list-style: none;
+}
+img {
+	border-style: none;
+}
+
+#map {
+  width: 80%;
+  height: 700px;
+	display: block;
+	margin: 0 auto;
+	margin-top: vh;
+}
+body{
+	margin: 0;
+}
+html {
+	-webkit-text-size-adjust: 100%;
+	font-size: 62.5%;
+}
+body {
+	color: #3e3a39;
+	font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", san-serif;
+	font-weight: 500;
+    text-align: center;
+	margin:0px;
+}
+
+img {
+	border-style: none;
+}
+hr {
+  border-top: 1px dotted #FF8B8D;
+  border-bottom: 1px dotted #FF8B8D;
+}
+
+
+a {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+    cursor: hand;
+}
+a:hover{
+	cursor: pointer;
+    cursor: hand;
+}
+
+ul li{
+	list-style: none;
+}
+
+h2 {
+	font-family: 游明朝, "Yu Mincho", YuMincho, "Hiragino Mincho ProN", serif;
+	font-weight: DemiBold;
+}
+
+.header_logo{
+    width: 60px;
+	height: 50px;
+	background-image: url(../images/logo10.png);
+	background-size: cover;
+}
+.header_wrap{
+	width: 100%;
+    line-height: 60px;
+	background-color:;
+	vertical-align: middle;
+	text-align: center;
+	position: relative;
+} 
+.header_wrap ul{
+	
+}
+.header_navigation{
+	margin-top: 20px;
+	display: inline-block;
+	font-family: 'Open Sans', sans-serif;
+}
+.header_wrap li{
+	display:inline-block;
+	color:#666;
+	font-size: 1.5em;
+	padding-left: 10px;
+	padding-right:10px;
+	
+}
+
+.header_wrap span{
+}
+
+.footer_wrap{
+	width:100%;
+	height: 60px;
+    line-height: 60px;
+	background-color:#FF8B8D;
+	background-size: cover;
+}
+.footer_wrap a{
+	vertical-align: middle;
+	color: #fff;
+}
+
+
+
+
+.wrapper
+{
+    background-color : #eee;
+    width : 960px ;
+    margin : 0 auto ;
+    padding : 10px;
+    text-align : center ;
+    overflow : hidden ;
+}
+.logout{
+	position: relative;
+    display: inline-block;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    color: #FFF;
+    background: #03A9F4;/*色*/
+    border: solid 1px #0f9ada;/*線色*/
+    border-radius: 4px;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.2);
+    text-shadow: 0 1px 0 rgba(0,0,0,0.2);
+	margin-right: 80vw;
+	margin-top: 5vh;
+}
+.logout:active{
+	border: solid 1px #03A9F4;
+    box-shadow: none;
+    text-shadow: none;
+
+}
+/*フォームの設定*/
+
+form
+{
+    display : block ;
+    width : 400px ;
+    margin : 10px auto ;
+    padding : 20px ;
+    border-radius : 20px ;
+}
+
+.form_login
+{
+    background-color : #bdf ;
+}
+.form_registration
+{
+    background-color : #dfb ;
+}
+
+
+
+/*入力フォームの設定*/
+
+input[type="text"]:focus
+{
+  outline: 0;
+}
+
+.input_block
+{
+    display : block ;
+}
+
+.input_block div
+{
+    display : inline-block ;
+    margin : auto ;
+}
+
+.input_block p
+{
+    display : inline-block ;
+    width : 100px ;
+}
+
+.input_block input
+{
+    height : 30px ;
+    padding : 10px ;
+    border-radius : 7px ;
+    border : 1px solid ;
+    font-size : 16px ;
+    font-weight : bold ;
+}
+
+.login_input input
+{
+    background-color : #eef ;
+    border-color : #45c ;
+}
+
+
+.registration_input input
+{
+    background-color : #efe ;
+    border-color : #395 ;
+}
+
+.input_block input:hover
+{
+    background-color : #fff ;
+}
+
+
+.input_block input:focus
+{
+    background-color : #ffb ;
+}
+
+.hidden
+{
+    display :none;
+}
+
+.form_reset input
+{
+    display : none ;
+}
+
+/*ボタンの設定*/
+
+button
+{
+    width : 120px ;
+    height : 40px ;
+    border : none ;
+    border-radius : 25px ;
+    background-color : #666 ;
+    color : #fff ;
+    font-weight : bold ;
+}
+
+button:visited
+{
+    background-color : #666 ;
+}
+
+button:hover
+{
+    background-color : #888 ;
+}
+
+.login_button
+{
+    background-color : #129 ;
+}
+
+.login_button:visited
+{
+    background-color : #129 ;
+}
+
+.login_button:hover
+{
+    background-color : #45c ;
+}
+
+.reset_button
+{
+    background-color : #d11 ;
+}
+
+.reset_button:visited
+{
+    background-color : #d11 ;
+}
+
+.reset_button:hover
+{
+    background-color : #f44 ;
+}
+
+
+.registration_button
+{
+    background-color : #173 ;
+}
+
+.registration_button:visited
+{
+    background-color : #173 ;
+}
+.registration_button:hover
+{
+    background-color : #395 ;
+}
+
+.first_Heading{
+	width: 600px;
+	height: 800px;
+}
