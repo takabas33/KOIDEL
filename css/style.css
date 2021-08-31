@@ -97,7 +97,7 @@ main{
 	width: 448px;
 	height:248px;
 	background-size: cover;
-	background-image:url(../images/logo12.png);
+	/* background-image:url(../images/main_image.png); */
 	display: block;
 	margin: 20vh auto 0 auto;
 	
@@ -608,7 +608,7 @@ display: flex;
     align-items: center;
     justify-content: center;
     width: calc(525px * .492776886);
-    height: 525px;
+    height: 500px;
     background: linear-gradient(180deg, #fff -45.17%, rgba(255,255,255,0) 130.21%),#FAFBFC;
     box-shadow: 0px 0.5px 2px rgba(0,18,57,0.1), 0px 11px 17px rgba(0,18,57,0.09), inset 0px -3px 20px rgba(0,18,57,0.1), inset 0px 8px 13px #fff, inset 0px 0px 7px rgba(0,18,57,0.05);
     border-radius: calc(525px * .0664686269);
@@ -762,21 +762,26 @@ display: flex;
 
 .registration{
 	width: 100%;
-	height:43vh;
+	height:360px;
 	background-color:#91d0c2;
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 100px;
 }
 .registation_bicycle img{
-	width: 200px;
-	height: 100px;
-	display: block;
-	margin-left: 68vw;
-	padding-top: 5vh;
+
+
+}
+.registration_logo{
+	padding-top: 75px;
+}
+.registation_bicycle{
+	margin-bottom: 30px;
 }
 .app{
 	width: 300px;
 	height:70px;
-	margin-left: 65.5vw;
-	padding-top: 5vh;
+
 	display: block;
 	
 }
@@ -804,7 +809,6 @@ display: flex;
 	background-image: url(../images/bike_iphone2.png);
 	background-size: cover;
 	position: absolute;
-	margin-left: 20vw;
 	
 }
 
@@ -879,10 +883,15 @@ display: flex;
 	margin-bottom: -15px;
 }
 
-
-
-@media screen and (max-width: 479px) { /*ウィンドウ幅が最大479pxまでの場合に適用*/
-.wrap {
-
+@media screen and (min-width: 764px) { 
+.hidden_pc{
+	visibility:hidden;
+	display: none;
 }
+.hidden_phone img{
+	height:248px;
+	display: block;
+	margin: 20vh auto 0 auto;
+}
+
 }
